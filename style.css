@@ -1,9 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Forum", cursive;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
 }
 header {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 2vh;
+  padding: 4vh 0;
+  background-image: url(img/header-background.jpg);
+}
+.logo > img {
+  width: 10vw;
+}
+.title > img {
+  width: 30vw;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10vh 0 15vh;
+}
+nav > span {
+  margin-left: -1vw;
+}
+nav > span > a > img {
+  width: 12vw;
+}
+section {
+  margin-left: 10vw;
+}
+.character-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  overflow: hidden;
+}
+.character-name {
+  margin-right: 10vw;
+}
+.character-name > .name {
+  font-size: 2.5em;
+  font-style: italic;
+}
+.character-name > .va {
+  font-size: 1em;
+  color: gold;
+  font-style: italic;
+}
+.character-image > img {
+  width: 60vw;
+  margin-right: -1vw;
+}
+.character-description {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding-right: 40vw;
+  font-size: 1.2em;
 }
